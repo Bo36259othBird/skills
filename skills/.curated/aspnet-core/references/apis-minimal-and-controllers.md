@@ -36,6 +36,9 @@ Minimal API reminders:
 
 On .NET 10, Minimal APIs support built-in validation with `AddValidation()`. Use that instead of inventing parallel validation infrastructure when the target framework supports it.
 
+<!-- Personal note: I tend to group endpoints by feature folder (e.g. Features/Orders/OrdersEndpoints.cs)
+     rather than a single flat EndpointExtensions file. Easier to navigate as the project grows. -->
+
 ## Controller API Guidance
 
 Prefer controllers when the API needs:
@@ -78,4 +81,4 @@ Key `[ApiController]` behaviors:
 
 ## Native AOT
 
-Use `dotnet new webapiaot` only when native AOT is an explicit deployment requirement. Treat it as a constraint that affects library choice, reflection, JSON patterns, and compatibility.
+Use `dotnet new webapiaot` only when native AOT is an explicit deployment requirement. Treat it as a constraint that affects library choice, reflec
