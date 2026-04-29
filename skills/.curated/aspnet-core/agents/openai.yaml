@@ -3,3 +3,7 @@ interface:
   short_description: "[Windows only] Build and review ASP.NET Core web apps"
   icon_large: "./assets/dotnet-logo.png"
   default_prompt: "Create a new $aspnet-core website for me."
+
+# Note: short_description says Windows only, but ASP.NET Core is cross-platform
+# (works on Linux/macOS too). Keeping as-is since this may refer to the agent
+# environment, not ASP.NET Core itself.
