@@ -35,6 +35,8 @@ $skill-installer install https://github.com/openai/skills/tree/main/skills/.expe
 
 After installing a skill, restart Codex to pick up new skills.
 
+> **Personal note:** I've found it useful to keep a local list of installed skills in a `my-skills.txt` file at the repo root, since there's no built-in way to list currently active skills in Codex.
+
 ## License
 
 The license of an individual skill can be found directly inside the skill's directory inside the `LICENSE.txt` file.
